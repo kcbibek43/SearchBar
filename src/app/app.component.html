@@ -1,0 +1,8 @@
+<app-navbar (onTextChange) = "searchByText($event)"></app-navbar>
+
+<div class="container">
+  <div class="row row-cols-lg-4">
+    <app-card *ngFor = "let item of bookDetails" [book] = item></app-card>
+  </div>
+
+</div>
